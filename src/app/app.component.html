@@ -1,0 +1,9 @@
+<div *ngFor = "let isidata of datadariglob">
+  {{isidata.no}}-{{isidata.isid}}
+</div>
+
+<div>
+  <input type="text" placeholder="Isi Data no" [(ngModel)]="dno"/>
+  <input type="text" placeholder="Isi Data Des" [(ngModel)]="ddes"/><br>
+  <button (click)="save()">BUTTON</button>
+</div>
